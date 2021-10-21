@@ -28,18 +28,23 @@
 #         break
 
 #1110
-n = int(input())
-m =n
-count =0
+# n = int(input())
+# m =n
+# count =0
 
-while True:
-    plus = (n//10) + (n%10)
-    new_n = ((n%10)*10) + (plus%10)
-    count += 1
-    n = new_n
-    if m == new_n:
-        break
-print(count)
+# while True:
+#     plus = (n//10) + (n%10)
+#     new_n = ((n%10)*10) + (plus%10)
+#     count += 1
+#     n = new_n
+#     if m == new_n:
+#         break
+# print(count)
+
+
+
+
+
 
 
 # https://blog.naver.com/yardyard/222455656176
