@@ -17,4 +17,19 @@
 # print(min(nums),max(nums))
 
 #2562
+# n=[] 
+# for i in range(9):
+#     a = input() 
+#     n.append(a)
+# print(n)
+# print(max(n))
+# print(n.index(max(n))+1)
+
+# n = []
+# for i in range(9):
+#     n.append(int(input()))
+# print(max(n))
+# print(n.index(max(n))+1)
+
+print(150*266*427)
 
