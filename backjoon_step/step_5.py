@@ -31,5 +31,76 @@
 # print(max(n))
 # print(n.index(max(n))+1)
 
-print(150*266*427)
 
+#2577
+# print(150*266*427)
+
+# test = []
+# test = str(150*266*427)
+# print(test)
+# print(test.index('0')) # 내가 착각하고 있었던것. index는 특정값이 몇번쨰 인덱스에 있는지 알려주는것, 그래서 내가 원하는 3개의 값이 아닌 170 0이 인덱스2에 있기에 2를 출력.
+# for i in range(len(test)):
+#     print(test.count(str(i)))
+    
+# A = int(input())
+# B = int(input())
+# C = int(input())
+
+# mult_result = list(str(A*B*C))
+# for i in range(len(mult_result)+2): # 아니 내가 이렇게 한거랑 그냥 range(10)이랑 뭔 차이가 있길레 내가 쓴건 틀리고 10한건 맞는거지? 결과값이 17037300 길이는 8자이며, +2 하면 10으로 같을테고
+#     print(mult_result.count(str(i))) # 실행값은 같은데 왜 내껀 틀리고, 다른 방식의 값은 맞게 된건지 모르겠네;
+
+
+#3052
+# count = []
+# for i in range(1,11):
+#     num = int(input())%42
+#     count.append(str(num))
+#     if count.count(str(num)) >1:
+#         count.remove(str(num)) # pop도 될듯.
+# print(len(count))
+
+
+#---- 인터넷 방법 ----
+# arr = []
+# for i in range(10):
+#         n = int(input())
+#         arr.append(n % 42)
+# arr = set(arr) # set 함수는 중복 제거 ( 집합에서의 중복 제거.)
+# print(len(arr))
+
+#1546 # 문제를 이해못함;; 
+
+
+#8958
+
+
+# n = int(input())
+test = list(map(str,input()))
+count = 1
+sum = 0
+a = list("O")
+
+for i in range(len(test)):
+    if test[0] == "O":
+        sum =+ count
+    elif i>0:
+        if test[i] == "O":
+            if test[i] == test[i-1]:
+                    count = count + 1
+                    sum = sum + count
+
+            else:
+                count = 1
+                sum = sum + count
+    print(test[i])
+    print(type(test[i]))
+
+
+
+# 5
+# OOXXOXXOOO
+# OOXXOOXXOO
+# OXOXOXOXOXOXOX
+# OOOOOOOOOO
+# OOOOXOOOOXOOOOX
