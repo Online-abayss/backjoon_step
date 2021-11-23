@@ -76,31 +76,70 @@
 
 
 # n = int(input())
-test = list(map(str,input()))
-count = 1
-sum = 0
-a = list("O")
-
-for i in range(len(test)):
-    if test[0] == "O":
-        sum =+ count
-    elif i>0:
-        if test[i] == "O":
-            if test[i] == test[i-1]:
-                    count = count + 1
-                    sum = sum + count
-
-            else:
-                count = 1
-                sum = sum + count
-    print(test[i])
-    print(type(test[i]))
 
 
+# 나중에 다시 보고 수정해보기
+# test = list(map(str,input()))
+# count = 1
+# sum = 0
+# a = list("O")
 
-# 5
+# for i in range(len(test)):
+#     if test[0] == "O":
+#         sum += count
+#     elif i>0:
+#         if test[i] == "O":
+#             if test[i] == test[i-1]:
+#                     count = count + 1
+#                     sum = sum + count
+
+#             else:
+#                 count = 1
+#                 sum = sum + count
+#     print(test[i])
+#     print(type(test[i]))
+
+# test_num = int(input())
+
+# for i in range(test_num):
+#     count = 0
+#     sum = 0
+#     check = list(input())
+#     for j in check:
+#         if j == "O":
+#             count += 1
+#             sum += count
+#         else:
+#             count = 0
+#     print(sum)
+    
+
+# # 5
 # OOXXOXXOOO
 # OOXXOOXXOO
 # OXOXOXOXOXOXOX
 # OOOOOOOOOO
 # OOOOXOOOOXOOOOX
+
+# 4344
+
+rep_num = int(input())
+test_num =[]
+for i in range(rep_num):
+    test_num = input().split()
+    cnt = int(test_num[0])
+    sum = 0
+    count = 0
+    for j in range(1,cnt+1):
+        sum += int(test_num[j])
+    for k in range(1,cnt+1):
+        if int(test_num[k]) > sum/cnt:
+            count += 1
+    print()
+
+# 5
+# 5 50 50 70 80 100
+# 7 100 95 90 80 70 60 50
+# 3 70 90 80
+# 3 70 90 81
+# 9 100 99 98 97 96 95 94 93 91
