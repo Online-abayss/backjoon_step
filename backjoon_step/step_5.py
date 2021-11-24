@@ -123,23 +123,20 @@
 
 # 4344
 
-rep_num = int(input())
-test_num =[]
-for i in range(rep_num):
-    test_num = input().split()
-    cnt = int(test_num[0])
-    sum = 0
-    count = 0
-    for j in range(1,cnt+1):
-        sum += int(test_num[j])
-    for k in range(1,cnt+1):
-        if int(test_num[k]) > sum/cnt:
-            count += 1
-    print()
+# rep_num = int(input())
+# test_num =[]
+# for i in range(rep_num):
+#     test_num = input().split()
+#     cnt = int(test_num[0])
+#     sum = 0
+#     count = 0
+#     for j in range(1,cnt+1):
+#         sum += int(test_num[j])
+#     for k in range(1,cnt+1):
+#         if int(test_num[k]) > sum/cnt:
+#             count += 1
+#     print("%0.3f" %(count/cnt*100)+'%')
+    
+# https://blog.naver.com/jhong2282/222465861522 << 깔끔한 버전 
+# 번거롭게 앞에 int 붙여야 했던건 input은 출력이 str으로 받기 때문이기에. map으로 int으로 처리해서 전체를 list 하면 깔끔.
 
-# 5
-# 5 50 50 70 80 100
-# 7 100 95 90 80 70 60 50
-# 3 70 90 80
-# 3 70 90 81
-# 9 100 99 98 97 96 95 94 93 91
