@@ -33,9 +33,15 @@
          
 
 # 1065
-n = input()
-test = list(map(int,n))
-if n <100:
-    print(n)
-elif test[0]-test[1] == test[1]-test[2] :
-    print(n)
+# n = int(input())
+# count = 0
+# for i in range(1,n+1):
+#     test = list(map(int,str(i))) # str(i)로 묶은 이유 : 각 숫자를 하나씩 만들기 위해.
+#     if i <100:
+#         count += 1
+#     else:
+#         if test[0]-test[1] == test[1]-test[2]: # 처음엔 한수라는게 각 자릿수 차끼리 같으면 되느줄 알고 abs()라는 절대값을 넣음
+#             count += 1
+
+# print(count)
+
