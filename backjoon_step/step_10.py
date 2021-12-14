@@ -28,7 +28,16 @@
 # n = int(input())
 # print(test(n))
 
-#11729
 
-def hanoi(n):
-    
+# 11729
+
+# def hanoi(n,a,b,c):
+#     if n==1:
+#         print(a,c) # 이동할 원판 즉 마지막 원판이며, 가장 큰 원판일것이니 1>3으로 이동
+#     else:
+#         hanoi(n-1,a,c,b) # 하나 남을때까지 통채로 1>2로 옮기는 작업. 
+#         print(a,c) #if와 동일.
+#         hanoi(n-1,b,a,c) # 다시 2에 있는 것들을 c에 옮기는 작업.
+
+# 인터넷 보고 이해함. 하노이의 논리?를 
+
