@@ -68,14 +68,24 @@
 # 결론 . 잘 알아두고... 머리가 유연해지기...
 # 글구 모듈 불러와서 함수 사용하는 법들도 있지만. 일단 한바퀴 돌기전에 최대한 사용하지 않을 예정
 
-sum = 0
-test = int(input())
-# creat_num = 198
-for i in range(1,test):
-    if test <10 :
-        print(test)
-        break
-    lst_num = list(str(i))
-    for j in range(len(lst_num)):
-        sum += int(lst_num[j])
-print(sum)
+#2231
+
+# n = int(input())
+# for i in range(n):
+     
+#      total = i
+#      for j in range(len(str(i))):
+
+#           total += int(str(i)[j])
+#      if total == n:
+#           print(i)
+#           break
+# else:
+#      print(0)
+## list만 [1.... ] 있다고 생각하지말자. str도 가능하다. 너무 어렵게 생각하지말자.
+
+
+#7568
+weight = 55
+height = 185
+
