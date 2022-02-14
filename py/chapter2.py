@@ -63,3 +63,66 @@
 #     print(h-1, m+15)
 # else:
 #     print(23,m+15)
+
+## 2525
+
+#왜 틀린지 모르겠다... 결과값은 나오는데..
+# h, m = map(int,input().split())
+# ing = int(input())
+# sumH = (m+ing)//60
+# sumM = (m+ing)%60
+
+# if h+sumH >23:
+#     print("{} {}".format(0,sumM))
+# else:
+#     if m+ing<60:
+#         print("{} {}".format(h,m+ing))
+#     if m+ing>=60:
+#         print("{} {}".format(h+sumH,sumM))
+
+#인터넷 맞는 답.
+# H, M = map(int, input().split())
+# timer = int(input()) 
+
+# H += timer // 60
+# M += timer % 60
+
+# if M >= 60:
+#     H += 1
+#     M -= 60
+# if H >= 24:
+#     H -= 24
+
+# print(H,M)
+
+## 2480
+
+#왜 틀린지 또 모르겠다.
+# a,b,c = map(int,input().split())
+# if a!=b!=c:
+#     print(max(a,b,c)*100)
+# elif a==b==c:
+#     print(10000+a*1000)
+# else:
+#     if a==c:
+#         print(1000+a*100)
+#     if b==c:
+#         print(1000+b*100)
+#     if a==b:
+#         print(1000+a*100)
+
+## 인터넷 답
+# a, b, c = map(int, input().split())
+
+# if a == b == c:
+#     print(10000+a*1000)
+# elif a == b:
+#     print(1000+a*100)
+# elif a == c:
+#     print(1000+a*100)
+# elif b == c:
+#     print(1000+b*100)
+# else:
+#     print(100 * max(a,b,c))
+    
+
