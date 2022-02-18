@@ -109,3 +109,56 @@
 # else:
 #     print(b)
 
+## 5622
+
+# 받은 문자를 나누기.
+# 특정 숫자에 문자 입력 (단 시간 구하는거니, 숫자 1 = 2초니 숫자에 +1 할수 있게하기.)
+
+# 노가다형... 
+# test = list(map(str,input()))
+# num2 = list(str("ABC"))
+# num3 = list(str("DEF"))
+# num4 = list(str("GHI"))
+# num5 = list(str("JKL"))
+# num6 = list(str("MNO"))
+# num7 = list(str("PQRS"))
+# num8 = list(str("TUV"))
+# num9 = list(str("WXYZ"))
+
+# count = 0
+
+# for i in test:
+#         for j in range(len(num2)):
+#                 if i == num2[j]:
+#                         count += 3
+#                 elif i == num3[j]:
+#                         count += 4
+#                 elif i == num4[j]:
+#                         count += 5
+#                 elif i == num5[j]:
+#                         count += 6
+#                 elif i == num6[j]:
+#                         count += 7
+#                 elif i == num8[j]:
+#                         count += 9
+#         for l in range(len(num7)):
+#                 if i == num7[l]:
+#                         count += 8
+#                 elif i == num9[l]:
+#                         count += 10
+
+# print(count)
+
+## 인터넷 방법
+
+# li=['ABC','DEF','GHI','JKL','MNO','PQRS','TUV','WXYZ']
+# word=input()
+# cnt=0
+# for i in range(len(word)):
+#     for j in li:
+#         if word[i] in j:
+#             cnt+=li.index(j)+3
+# print(cnt)
+        ## 저 코드를 줄일 방법 중 '안에 있는가' 여부를 판단하는 함수를 뭔지 모르고 있었음. 노가다로 코드 쓰면서도 방법이 있는데 까먹었다고, 계속 생각.
+
+
