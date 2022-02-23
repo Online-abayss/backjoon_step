@@ -161,4 +161,50 @@
 # print(cnt)
         ## 저 코드를 줄일 방법 중 '안에 있는가' 여부를 판단하는 함수를 뭔지 모르고 있었음. 노가다로 코드 쓰면서도 방법이 있는데 까먹었다고, 계속 생각.
 
+## 2941
+
+#인터넷 방법 1
+
+# alpha_list = ["c=","c-","dz=","d-","lj","nj","s=","z="]
+
+# text = input()
+
+# cnt = 0
+
+# for i in alpha_list:
+#         while i in text:
+#                 cnt += text.count(i)
+#                 text = text.replace(i,"0"*len(i))
+# print(cnt+len(text)-text.count("0"))
+
+# 인터넷 방법 2
+
+# a = ["c=","c-","dz=","d-","lj","nj","s=","z="]
+# alpha = input()
+
+# for i in a:
+#         alpha = alpha.replace(i, '*')
+# print(len(alpha))
+
+## 1316
+# import sys
+# input = sys.stdin.readline
+# num = int(input())
+# for _ in range(num):
+#         text = input().rstrip()
+#         cnt = 0
+#         for i in range(len(text)-1): 
+#                 if text[i] != text[i+1]:
+#                         if text[i] in text[i+1:]:
+#                                 cnt += 1
+                                
+#         if cnt >= 1:
+#                 num -=1
+
+                                
+
+# print(num)
+
+                           
+
 
