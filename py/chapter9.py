@@ -88,15 +88,54 @@
 #     if check[i]:
 #         print(i)
 
+# 4948
+
+## 인터넷 방법 , 방법은 떠올랏는데 계속 틀려서 포기.
+# max_num = 123456*2 +1
+# check_list = [1 for i in range(max_num)]
+
+# for i in range(2,int(max_num**0.5)+1):
+#     if check_list[i] == 1:
+#         j = 2
+#         while i*j <=max_num:
+#             check_list[i*j] = 0
+#             j+=1
+
+# while (1):
+#     cnt = 0
+#     n = int(input())
+#     m = n*2
+#     if n == 0:
+#         break
+
+#     for i in range(n+1,m+1):
+#         if check_list[i]:
+#             cnt +=1
+#     print(cnt)
 
 
+## 9020
+
+# n = 10000
+
+# check =  [1 for i in range(n+1)]
+# check[0] == 0 , check[1] == 0
 
 
+# for i in range(2,int(n**0.5)+1):
+#     for j in range(i+i,n+1,i):
+#         check[j] = 0
 
 
+# t = int(input())
 
-
-
+# for i in range(t):
+#     test = int(input())
+#     for j in range(test//2,1,-1):
+#         if check[j]==1:
+#             if check[test-j]:
+#                 print(j, test-j)
+#                 break
 
 
 
@@ -151,3 +190,26 @@
 
 ## 3053
 
+# import math
+
+# r = int(input())
+# print(r*r*math.pi)
+# print(r*r*2)
+
+
+## 1002
+
+# n = int(input())
+
+# for i in range(n):
+#   x1, y1, r1, x2, y2, r2 = map(int, input().split())
+#   r = ( (x1-x2)**2 + (y1-y2)**2 ) ** (1/2)
+  
+#   if (r==0 and r1==r2) :
+#     print(-1)
+#   elif r > (r1 + r2) or r < abs(r1-r2):
+#     print(0)
+#   elif r == r1+r2 or r == abs(r1-r2) :
+#     print(1)
+#   else :
+#     print(2)
