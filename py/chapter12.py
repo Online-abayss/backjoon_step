@@ -102,15 +102,95 @@
 
 
 ## 11651
+# import sys
+
+# input = sys.stdin.readline
+# case = int(input())
+# num_list = [list(map(int,input().split())) for i in range(case)]
+
+# num_sort = sorted(num_list, key=lambda num_list: num_list[1])
+
+# for i,j in num_sort:
+#     print(i, j)
+## 위에꺼 안되는 이유는 (x,y) 의 y가 같을경우 순서 바꿔서 입력시 구분 못해서 그런가봄
+
+# import sys
+
+# input = sys.stdin.readline
+# case = int(input())
+# num_list = [list(map(int,input().split())) for i in range(case)]
+
+# num_sort = sorted(num_list, key=lambda x : (x[1], x[0]))  ## key는 정렬 기준만 잡아준다 x[1], x[0] 정렬 기준으로 잡고 원본 리스트를 바꿔준다.
+
+# for i,j in num_sort:
+#     print(i, j)
+
+## 1181
+
+# import sys
+
+# input = sys.stdin.readline
+# case = int(input())
+
+# text_list = []
+# for _ in range(case):
+#     text_list.append(input().strip())
+
+# text_list = list(set(text_list))
+# text_list.sort()
+# text_list.sort(key= len)
+
+# for i in text_list:
+#     print(i)
+
+
+## 10814
+
+# import sys
+
+# case = int(input())
+
+# member = []
+# for i in range(case):
+#     age, name = input().split()
+#     member.append((age, name))
+
+# member.sort(key= lambda x : int(x[0])) ## 안됫던 이유는 int[x]가 빠져서... 이해한다.
+
+# for i, j in member:
+#     print(i, j)
+
+## 18870
+
+
+## 시간초과 ㅠ.ㅠ
+# import sys
+
+# input = sys.stdin.readline
+
+# case = int(input())
+# x_list = list(map(int,input().split()))
+# x_set_list = list(set(x_list))
+# x_set_list.sort()
+
+# for i in x_list:
+#     print(x_set_list.index(i), end= " ")
+
+## 인터넷 방법 [ 시간초과를 해결 할 방법이 안떠오름]
+
 import sys
 
 input = sys.stdin.readline
 case = int(input())
-num_list = [list(map(int,input().split())) for i in range(case)]
+x_list = list(map(int,input().split()))
+x_set_list = list(set(x_list))
+x_set_list.sort()
 
-num_list.sort()
+dic = {value:index for index, value in enumerate(x_set_list)}
 
-for i,j in num_list:
-    print(i, j)
+for i in x_list:
+    print(dic[i],end=" ")
+print(dic)
+
 
 
