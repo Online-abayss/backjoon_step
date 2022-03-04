@@ -178,19 +178,19 @@
 
 ## 인터넷 방법 [ 시간초과를 해결 할 방법이 안떠오름]
 
-import sys
+# import sys
 
-input = sys.stdin.readline
-case = int(input())
-x_list = list(map(int,input().split()))
-x_set_list = list(set(x_list))
-x_set_list.sort()
+# input = sys.stdin.readline
+# case = int(input())
+# x_list = list(map(int,input().split()))
+# x_set_list = list(set(x_list))
+# x_set_list.sort()
 
-dic = {value:index for index, value in enumerate(x_set_list)}
+# dic = {value:index for index, value in enumerate(x_set_list)}
 
-for i in x_list:
-    print(dic[i],end=" ")
-print(dic)
+# for i in x_list:
+#     print(dic[i],end=" ")
+# print(dic)
 
 
 
