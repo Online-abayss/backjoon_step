@@ -119,10 +119,3 @@
 # print(test_sum)
 
 
-
-import sys
-
-input = sys.stdin.readline
-
-case = int(input())
-
