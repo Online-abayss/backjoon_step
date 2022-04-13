@@ -276,7 +276,49 @@
 # else:
 #     print('0')
 
-    
+# 5086
+
+
+
+# while(1):
+#     a, b = map(int,input().split())
+#     if a == b == 0:
+#         break
+#     if b % a ==0:
+#         print('factor')
+#     elif a % b ==0:
+#         print('multiple')
+#     else:
+#         print('neither')
+
+
+# 5717
+
+# while(1):
+#     a, b = map(int,input().split())
+#     if a==b==0:
+#         break
+#     print(a+b)
+
+# 9610
+
+
+
+
+
+
+
+# 9085
+
+
+case = int(input())
+for i in range(case):
+    T = int(input())
+    nums = map(int,input().split())
+    print(sum(nums))
+
+
+
 
 
 
