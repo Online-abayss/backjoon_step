@@ -302,7 +302,28 @@
 
 # 9610
 
+# case = int(input())
+# Q1 = Q2 = Q3 = Q4 = AXIS = 0
 
+# for _ in range(case):
+#     x, y = map(int, input().split())
+#     if x == 0 or y == 0:
+#         AXIS += 1
+#     elif x > 0 and y > 0:
+#         Q1 += 1
+#     elif x < 0 and y > 0:
+#         Q2 += 1
+#     elif x < 0 and y < 0:
+#         Q3 += 1
+#     elif x > 0 and y < 0:
+#         Q4 += 1
+
+# print("Q1: %d" %(Q1))
+# print("Q2: %d" %(Q2))
+# print("Q3: %d" %(Q3))
+# print("Q4: %d" %(Q4))
+# print("AXIS: %d" %(AXIS))
+    
 
 
 
@@ -311,11 +332,112 @@
 # 9085
 
 
-case = int(input())
-for i in range(case):
-    T = int(input())
-    nums = map(int,input().split())
-    print(sum(nums))
+# case = int(input())
+# for i in range(case):
+#     T = int(input())
+#     nums = map(int,input().split())
+#     print(sum(nums))
+
+# 9506
+
+# while True:
+#     n = int(input())
+#     if n == -1: # 입력 값이 -1이면 반복문 종료
+#         break
+#     arr = []
+#     for i in range(1, n):
+#         if n % i == 0:
+#             arr.append(i)
+#     if sum(arr) == n:
+#         print(n, " = ", " + ".join(str(i) for i in arr), sep="")
+#     else:
+#         print(n, "is NOT perfect.")
+            
+
+
+## 10162
+
+# A = 5분 / B = 1분 / C = 10초
+
+# a,b,c = 0,0,0
+# t = int(input())
+
+# if t%10 !=0:
+#     print(-1)
+# else:
+#     a = t//300
+#     b = (t%300)//60
+#     c = ((t%300)%60)//10
+
+#     print(a, b , c, sep=" ")
+
+
+# 10103
+
+# case = int(input())
+
+# player1, player2 = 100, 100
+# for i in range(case):
+#     a, b  = map(int,input().split())
+#     if a > b :
+#         player2 -= a
+#     elif a < b :
+#         player1 -= b
+#     else:
+#         continue
+# print(player1,player2 ,sep="\n" )
+
+
+# 10214
+
+# case = int(input())
+
+# Y  , K = 0 ,0
+# for _ in range(case):
+#     for i in range(9):
+#         a , b = map(int,input().split())
+#         Y +=a
+#         K +=b
+#     if Y  > K :
+#         print('Yonsei')
+#     elif Y < K :
+#         print('korea')
+#     else:
+#         print('Draw')
+
+# 11557
+
+# case = int(input())
+
+# S = []
+# L = []
+# for i in range(case):
+
+#     for j in range(int(input())):
+#         a, b  = input().split()
+#         S.append(a)
+#         L.append(int(b))
+#     print(S[L.index(max(L))])
+
+
+# 1977
+
+
+m = int(input())
+n = int(input())
+
+
+cnt = []
+for i in range(1,101):
+    if n >= i**2 >= m :
+        cnt.append(i**2)
+if len(cnt) == 0:
+    print(-1)
+else:
+    print(sum(cnt),min(cnt), sep='\n')
+
+
+
 
 
 
