@@ -423,22 +423,129 @@
 # 1977
 
 
-m = int(input())
-n = int(input())
+# m = int(input())
+# n = int(input())
 
 
-cnt = []
-for i in range(1,101):
-    if n >= i**2 >= m :
-        cnt.append(i**2)
-if len(cnt) == 0:
-    print(-1)
-else:
-    print(sum(cnt),min(cnt), sep='\n')
+# cnt = []
+# for i in range(1,101):
+#     if n >= i**2 >= m :
+#         cnt.append(i**2)
+# if len(cnt) == 0:
+#     print(-1)
+# else:
+#     print(sum(cnt),min(cnt), sep='\n')
+
+# 11098
+
+# case =int(input())
 
 
+# for i in range(case):
+
+#     num_max = 0
+#     name = ''
+#     for j in range(int(input())):
+#         a, b =  input().split()
+#         if int(a)> num_max:
+#             num_max = int(a)
+#             name =  b
+#     print(name)
+
+# 5635
+
+# import sys
+# input = sys.stdin.readline
+
+# lst = []
+# for _ in range(int(input())):
+#     n,d,m,y = input().rstrip().split()
+#     d,m,y = map(int,(d,m,y))
+#     lst.append((y,m,d,n))
+#     print(lst)
+# lst.sort()
+# print(lst[-1][3])
+# print(lst[0][3])
+
+## 1408
 
 
+# h1, m1, s1 = map(int, input().split(':'))
+# h2, m2, s2 = map(int, input().split(':'))
+# t = h2*3600+m2*60+s2 - (h1*3600+m1*60+s1)
+# if t < 0:
+#     t += 60*60*24
+# h = t//3600 
+# m = (t%3600)//60 
+# s = t%60
+# print("%02d:%02d:%02d" % (h,m,s))
+
+# 2440
+
+# case = int(input())
+
+# for i in range(case,0,-1):
+#     print("*" * i)
+    
+
+
+# 2441
+
+# case = int(input())
+
+# for i in range(case):
+#     print(" "*i,end="")
+#     print("*" * (case-i))
+
+
+# 2748
+
+# test = [0,1]
+# case = int(input())
+# for i in range(case-1):
+#     test.append(test[i]+test[i+1])
+# print(test[case])
+
+# 10984
+
+# 왜 틀렷는지 모르겟다.
+
+# for i in range(int(input())):
+#     sum_c , sum_g = 0,0
+#     case =int(input())
+#     for j in range(case):
+#         c,g = map(float,input().split())
+
+
+#         sum_c += c
+#         sum_g += g
+#     print('{0} {1:.1f}'.format(int(sum_c),sum_g/case))
+
+#인터넷 방법
+# T = int(input())
+
+# for _ in range(T):
+#     N = int(input())
+#     total_credit = 0
+#     total_grade = 0
+    
+#     for _ in range(N):
+#         credit, grade = map(float, input().split())
+#         total_credit += credit
+#         total_grade += credit * grade
+        
+#     GPA = total_grade / total_credit
+#     print(int(total_credit), '%.1f' % GPA)
+
+# 10833
+# res = 0
+# for _ in range(int(input())):
+#     a, b = map(int, input().split())
+#     res += b%a
+# print(res)
+
+
+#
 
 
 
