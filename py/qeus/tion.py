@@ -545,9 +545,149 @@
 # print(res)
 
 
-#
+# 5565
+
+# price_lst = []
+# for i in range(10):
+#     price_lst.append(int(input()))
+
+# print((2*price_lst[0])-sum(price_lst))
+
+# 2442
+
+# case = int(input())
+
+# for i in range(1,case+1):
+#     print(" "*(case-i),end="")
+#     print("*"*(2*i -1))
+
+# 2443
+
+# case = int(input())
+
+# for i in range(case):
+#     print(" "*i,end="")
+#     print("*"*(2*(case-i)-1))
+
+# 2444
+
+# case = int(input())
+
+# for i in range(1,case+1):
+#     print(" "*(case-i),end="")
+#     print("*"*(2*i -1))
+# for i in range(1,case):
+#     print(" "*i,end="")
+#     print("*"*(2*(case-i)-1))
+
+# 2522
+
+# case = int(input())
+
+# for i in range(1,case+1):
+#     print(" "*(case-i), end="")
+#     print("*"*i)
+# for i in range(1,case):
+#     print(" "*i, end="")
+#     print("*"*(case-i))
+
+# 2523
+
+# case = int(input())
+
+# for i in range(1,case+1):
+#     print("*"*i)
+# for j in range(case-1,0,-1):
+#     print("*"*j)
 
 
+# 9325
+
+# T = int(input())
+
+# for _ in range(T):
+#     s = int(input())
+#     n = int(input())
+#     price = s
+    
+#     for _ in range(n):
+#         q, p = map(int, input().split())
+#         price += q * p
+        
+#     print(price)
 
 
+# 2445
+
+# case =int(input())
+
+# for i in range(1,case+1):
+#     print("*"*i, end="")
+#     print(" "*(case-i)*2, end="")
+#     print("*"*i)
+# for i in range(1,case):
+#     print('*'*(case-i), end="")
+#     print(' '*(i*2), end="")
+#     print('*'*(case-i))
+
+# 2446
+
+# n = int(input())
+# for i in range(n):
+#     print(" " * i + "*" * ((n - i) * 2 - 1))
+# for i in range(n - 2, -1, -1):
+#     print(" " * i + "*" * ((n - i) * 2 - 1))
+
+# 2010
+
+# import sys
+# n = int(sys.stdin.readline())
+# sum = 0
+# for i in range(n):
+#     sum += int(sys.stdin.readline())
+# print(sum - (n - 1))
+
+# 5522
+# sum_a = 0
+# for _ in range(5):
+#     a = int(input())
+#     sum_a +=a
+# print(sum_a)
+
+# 10178
+
+# case = int(input())
+
+# for i in range(case):
+#     c , v =map(int,input().split())
+
+#     print("You get {} piece(s) and your dad gets {} piece(s).".format(c//v,c%v))
+
+
+# 9295
+
+# case = int(input())
+
+# for i in range(1,case+1):
+#     a,b = map(int,input().split())
+#     print("Case {0}: {1}".format(i,a+b))
+
+# 10569
+
+# case = int(input())
+
+# for i in range(case):
+#     v, e = map(int,input().split())
+#     print(e-v+2)
+
+# 2921
+
+# n = int(input())
+# sum = 0
+# for i in range(0, n + 1):
+#     for j in range(i, n + 1):
+#         sum += i + j
+# print(sum)
+
+# 10995
 
